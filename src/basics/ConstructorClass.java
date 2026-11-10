@@ -58,5 +58,12 @@ public class ConstructorClass {
 		
 		ConstructorClass CallConstructorFromAnother = new ConstructorClass();
 		System.out.println(CallConstructorFromAnother.name);
+		
+		//Memory Allocation of new keywords
+		ConstructorClass one = new ConstructorClass();
+		ConstructorClass two = one;
+		
+		one.name = "Something something";
+		System.out.println(two.name);
 	}
 }
