@@ -6,12 +6,12 @@ public class ConstructorClass {
 	int rollno;
 	float marks;
 	
-	// Default constructor
-	public ConstructorClass() {
-		this.name = "Ripunjay";
-		this.rollno = 18;
-		this.marks = 23.4f;
-	}
+//	// Default constructor
+//	public ConstructorClass() {
+//		this.name = "Ripunjay";
+//		this.rollno = 18;
+//		this.marks = 23.4f;
+//	}
 	// Parameterized constructor
 	public ConstructorClass(int roll, float marks, String name) {
 		this.name = name;
@@ -32,6 +32,13 @@ public class ConstructorClass {
 		this.marks = marks;
 	}
 	
+	//Calling a constructor from another constructor
+	//Internally: new Student (11, "Ripunjay", 100.0f);
+	
+	public ConstructorClass(){
+		this("Ripunjay", 11, 100.0f);
+	}
+	
 	public static void main(String[] args) {
 		ConstructorClass Student = new ConstructorClass();
 		System.out.println(Student.marks);
@@ -48,5 +55,8 @@ public class ConstructorClass {
 		System.out.println(newPara.marks);
 		System.out.println(newPara.rollno);
 		System.out.println(newPara.name);
+		
+		ConstructorClass CallConstructorFromAnother = new ConstructorClass();
+		System.out.println(CallConstructorFromAnother.name);
 	}
 }
