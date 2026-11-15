@@ -10,6 +10,10 @@ public class Main {
 		System.out.println(Ripunjay.population);
 		System.out.println(Rahul.population);
 		System.out.println(Human.population);//Ideal way to use is using the class name and .operator
+		
+		//Since the method is static, we can use the Class. name to print it.
+		
+		Human.message();
 	}
 
 }
