@@ -23,6 +23,12 @@ public class Main {
 		
 		BoxWeight bw2 = new BoxWeight(2,3,4,5);
 		System.out.println(bw2.w + " " + bw2.h + " " + bw2.l + " "+ bw2.weight);
+		
+		BoxPrice bw3 = new BoxPrice(20, 22, 24, 120, 12764.99);
+		System.out.println(bw3.l + " " + bw3.h + " "+ bw3.w + " "+ bw3.weight + " " + bw3.price);
+		System.out.println("Just printing the price");
+		bw3 = new BoxPrice();
+		System.out.println(bw3.price);
 	}
 
 }
